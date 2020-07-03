@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/public/partials/pic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+#userPanel {
+    background-color: rgba(0, 0, 0, 0.664);
+    width: 30%;
+    height: 400px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.brink {
+    padding: 20px 0 10px 0;
+    margin: auto;
+}
+
+.form-control {
+    border-color: white;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(/public/partials/myfont.TTF);
+}
+
+.text {
+    color: white;
+    font-size: large;
+    font-family: myFont;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.icons {
+    color: white;
+    background-color: gray;
+}
+
+.rtl  {
+    text-align: right;
+    direction: rtl;
+}
+
+.radious {
+    border: 1px solid white;
+    border-radius: 0 5px 5px 0;
+}
+
+.btn {
+    background-color: rgb(28, 211, 113);
+    border: none;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+#register {
+    color: white;
+    font-family: myFont;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+
+#validationServerUsername:valid {
+    border: 2px solid green;
+    box-shadow: 0 0 8px 1.5px green;
+}
+
+#validationServerUsername:invalid {
+    border: 1.5px solid red;
+    box-shadow: none;
+}
+
+.not-valid {
+    visibility: hidden;
+}
+
+/* not Working (line 50 & 73 in HTML file) ☹☹☹ */
+#validationServerUsername:hover .not-valid {
+    visibility: visible;
+}           
